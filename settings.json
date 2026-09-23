@@ -1,0 +1,7 @@
+{
+	"tflint.executablePath": "/usr/local/bin/tflint",
+    "tflint.runOnSave": true,
+    "tflint.configFile": "${workspaceFolder}/.tflint.hcl",
+    "tflint.runOnOpen": true
+}
+
