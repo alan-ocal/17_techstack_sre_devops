@@ -37,7 +37,9 @@ hotfix-pr-alert-lambda/
 │   └── hotfixAlert.test.js
 ├── docs/
 │   ├── images/
-│   │   └── flow.png
+│   │   ├── flow.png
+│   │   ├── JMS.png
+│   │   └── resources.png
 ├── events/
 │   ├── github-ping-event.json
 │   ├── hotfix-pr-event.json
@@ -87,6 +89,10 @@ GitHub sends its pull request webhook to the API Gateway HTTPS endpoint (`base_u
 ## Flow diagram
 
 ![Alert flow](docs/images/flow.png)
+
+![Jira Service Management configuration](docs/images/JMS.png)
+
+![AWS resources](docs/images/resources.png)
 
 ```mermaid
 sequenceDiagram

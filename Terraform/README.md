@@ -56,6 +56,25 @@ flowchart LR
     Lambda --> Logs[CloudWatch Logs]
 ```
 
+### Module Correspondence
+
+| Terraform file | Responsibility |
+| --- | --- |
+| `main.tf` | Root provider, deployment inputs, and module composition |
+| `module-aws/main.tf` | Lambda function, S3 package upload, IAM role and logging resources |
+| `module-aws/api_gateway.tf` | API Gateway REST API, routes, Lambda integrations, stage, and invoke permission |
+| `module-aws/variables.tf` | Reusable module inputs and defaults |
+| `nodejs-alert-deployment-package.zip` | Lambda deployment artifact built from `hotfix-pr-alert-lambda/` |
+
+The Lambda source maps to the runtime responsibilities as follows:
+
+| Lambda file | Responsibility |
+| --- | --- |
+| `src/handler.js` | Validates GitHub webhook events and triggers JSM alerts |
+| `src/utils/event.js` | Parses payloads and identifies hotfix branches |
+| `src/services/jsmOperations.js` | Creates Jira Service Management Operations alerts |
+| `src/config.js` | Loads JSM configuration from Lambda environment variables |
+
 Terraform provisions:
 
 - Lambda function `ps-alert`
