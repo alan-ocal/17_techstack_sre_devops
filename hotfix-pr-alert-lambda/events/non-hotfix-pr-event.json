@@ -1,0 +1,11 @@
+{
+  "resource": "/{proxy+}",
+  "path": "/webhook",
+  "httpMethod": "POST",
+  "headers": {
+    "Content-Type": "application/json",
+    "X-GitHub-Event": "pull_request"
+  },
+  "body": "{\"action\":\"opened\",\"pull_request\":{\"head\":{\"ref\":\"feature/new-ui\"}}}",
+  "isBase64Encoded": false
+}

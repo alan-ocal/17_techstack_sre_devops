@@ -1,0 +1,11 @@
+{
+  "resource": "/ps-alert",
+  "path": "/ps-alert",
+  "httpMethod": "POST",
+  "headers": {
+    "Content-Type": "application/json",
+    "X-GitHub-Event": "pull_request"
+  },
+  "body": "{\"action\":\"opened\",\"pull_request\":{\"head\":{\"ref\":\"hotfix/FIX-123\"}}}",
+  "isBase64Encoded": false
+}

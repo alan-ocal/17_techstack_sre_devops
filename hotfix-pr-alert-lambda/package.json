@@ -1,0 +1,18 @@
+{
+  "name": "hotfix-alert",
+  "version": "1.0.0",
+  "description": "Lambda service that notifies Slack and creates JSM Operations alerts for hotfix pull requests.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --runInBand",
+    "start": "node src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

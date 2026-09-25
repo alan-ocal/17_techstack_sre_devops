@@ -1,0 +1,11 @@
+{
+  "resource": "/ps-alert",
+  "path": "/ps-alert",
+  "httpMethod": "POST",
+  "headers": {
+    "Content-Type": "application/json",
+    "X-GitHub-Event": "ping"
+  },
+  "body": "{\"demo\":\"ping the APIGW\",\"hook_id\":1}",
+  "isBase64Encoded": false
+}

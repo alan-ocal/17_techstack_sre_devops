@@ -1,0 +1,10 @@
+Terraform/terraform.tfvars
+Terraform/*.tfvars
+Terraform/*.tfvars.json
+Terraform/*.tfstate
+Terraform/*.tfstate.*
+Terraform/.terraform/
+Terraform/.terraform.lock.hcl
+Terraform/*.zip
+**/node_modules/
+.DS_Store

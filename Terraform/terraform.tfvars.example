@@ -1,0 +1,5 @@
+aws_access_key              = "your-aws-access-key"
+aws_secret_key              = "your-aws-secret-key"
+jsm_operations_api_key      = "your-jsm-api-key"
+jsm_operations_api_endpoint = "https://api.atlassian.com/jsm/ops/integration/v2/alerts"
+# slack_webhook_url            = "your-slack-webhook"
